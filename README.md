@@ -18,12 +18,12 @@
 **Purpose**: Our Project will be a simple open-world RPG in which a user will control a player that explores a small world, collecting coins as rewards for exploration and interacting with NPCs and objects across the map.
 
 **Source Assignment(s)**:
-  - teamwork 1/4 (class-based linear rpg)
-  - teamwork 9 (class introduction)
-  - teamwork 11 (legend of tuna)
-  - teamwork 12 (GUI)
-  - homework 10 (ciphers)
-  - homework 11 (final project design)
+  - Teamwork 1/4 (class-based linear rpg)
+  - Teamwork 9 (class introduction)
+  - Teamwork 11 (legend of tuna)
+  - Teamwork 12 (GUI)
+  - Homework 10 (ciphers)
+  - Homework 11 (final project design)
 
 **CRC Card(s)**:
   - Create a CRC card for each class that your project will implement.
@@ -33,7 +33,7 @@
     README. You can do this by saving an image in the repository and linking to it. See the sample CRC card below - 
     and REPLACE it with your own:
   
-## Player CRC Card
+### Player CRC Card
 
 | Class name: Player (self, texture)                                                                                                                                                                                                                                                                        |  |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| :---- |
@@ -44,7 +44,7 @@
 | **Class Variables:**                                                                                                                                                                                                                                                                                      | **Class Collaborations (other classes):** |
 | `attack_power`: A variable that holds a set amount of damage that will be dealt to a bad\_NPC’s health upon a hit <br/>`health`: Variable that holds an integer amount; is depleted from when bad\_NPC attacks                                                                                                |  |
 
-## NPC CRC Card
+### NPC CRC Card
 
 | Class name: NPC (self, texture, is\_random \= False, is\_key \= False, key\_dialogue \= None, region \= None)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------|
@@ -55,7 +55,7 @@
 | **Class Variables:**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | **Class Collaborations (other classes):**      |
 | `default_dialogue`: List of pre-determined dialogue options for NPC’s to display upon interaction if` is_key` returns False                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                |
 
-## Bad NPC CRC Card
+### Bad NPC CRC Card
 
 | Class name: bad\_NPC (self, texture)                                                                                                                                                                                                                                                                                                                                                                                                                                                    |  |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| :---- |
@@ -66,7 +66,7 @@
 | **Class Variables:**                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | **Class Collaborations (other classes):** |
 | `attack_power`: A variable that holds a set amount of damage that will be dealt to the Player’s health upon a hit health: Variable that holds an integer amount; is depleted from when bad\_NPC attacks                                                                                                                                                                                                                                                                                 |  |
 
-## Good NPC CRC Card
+### Good NPC CRC Card
 
 | Class name: good\_NPC (self)                                                                                                                                                                                                                                                                                                                      |  |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| :---- |
@@ -77,7 +77,7 @@
 | **Class Variables:**                                                                                                                                                                                                                                                                                                                              | **Class Collaborations (other classes):** |
 |                                                                                                                                                                                                                                                                                                                                                   |  |
 
-## Environment CRC Card
+### Environment CRC Card
 
 | Class name: Environment (self)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |  |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| :---- |
@@ -88,7 +88,7 @@
 | **Class Variables:**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Class Collaborations (other classes):** |
 | `environment_name`: A list containing the different environments                                                                                                                                                                                                                                                                                                                                                                                                                                                       |  |
 
-## Obstacle CRC Card
+### Obstacle CRC Card
 
 | Class name: Obstacle (self, texture, is\_interactable \= False)                                                                                                                                                                                                                                                             |  |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| :---- |
@@ -99,7 +99,7 @@
 | **Class Variables:**                                                                                                                                                                                                                                                                                                        | **Class Collaborations (other classes):** |
 |                                                                                                                                                                                                                                                                                                                             |  |
 
-## Coin CRC Card
+### Coin CRC Card
 
 | Class name: Coin (self)                                                                                                                                                                                                      |  |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| :---- |
@@ -110,7 +110,7 @@
 | **Class Variables:**                                                                                                                                                                                                         | **Class Collaborations (other classes):** |
 |                                                                                                                                                                                                                              |  |
 
-## Shop CRC Card
+### Shop CRC Card
 
 | Class name: Shop (self)                                                                                                                                                                                         |  |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| :---- |
@@ -121,7 +121,7 @@
 | **Class Variables:**                                                                                                                                                                                            | **Class Collaborations (other classes):** |
 |                                                                                                                                                                                                                 |  |
 
-## Game CRC Card
+### Game CRC Card
 
 | Class name: Game (self)                                                                                                                                                                                                                                                                                                                                                                                                   |  |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| :---- |
