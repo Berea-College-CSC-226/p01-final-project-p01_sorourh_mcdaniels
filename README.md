@@ -161,7 +161,10 @@ section as you go. DO NOT forget about it!
 What has surprised you so far? Describe your general feelings. Be honest with yourself; this section is for you, not me.
 
 ```
-    **Replace this text with your reflection
+    The project is going well so far. We started collecting the different sprites and images needed for the project and started the
+    issue queue for all of our classes. We are feeling pretty OK so far. We did some of the research before so that it would be easy
+    to implement. We realize we have a lot of coding and a lot of trial and error to work on, but we are optimistic that it will turn 
+    out fine and that it will be OK. We are excited to start working on this project as this is something we both are very interesed in.
 ```
 
 ---
