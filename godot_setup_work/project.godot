@@ -13,7 +13,6 @@ config_version=5
 config/name="CSC226_Project"
 run/main_scene="res://playground.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 
