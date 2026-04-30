@@ -171,16 +171,22 @@ What has surprised you so far? Describe your general feelings. Be honest with yo
 
 ## Milestone 3: Virtual Check-In
 
-❗Indicate what percentage of the project you have left to complete and how confident you feel. 
+Indicate what percentage of the project you have left to complete and how confident you feel. 
 
-❗️**Completion Percentage**: `0 - 100%`
+**Completion Percentage**: `30%`
 
-❗️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
+️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
   strategies you can employ to increase the likelihood that you'll be successful in completing this project 
   before the deadline.
 
 ```
-    **Replace this with your reflection
+    We feel that we can complete the project with a 70% confidence rate. This is due to the fact that we are using another software to write
+    the code instead of using PyCharm and Python as it aids with the implementation of a better GUI for what we are trying to do. This added 
+    a layer of difficulty that we are aware of, but we are ready to tackle the challenge. Furthermore, both of us had a very busy past couple of weeks 
+    to work on the project, so that lagged us behind a little, however we are committed to finishing it this weekend. 
+    Some stratigies we can imploy: instead of always having to work at the same time on the project and meeting up, we can distrubute the tasks 
+    such that each person can work on their own whenever they are free instead of only relying on meeting time; furthermore, trying to find shortcuts to 
+    implement the ideas that we have to add the functionalities that we want instead of going the hard route. 
 ```
 
 ---
