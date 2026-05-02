@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dc11uo7guolnx"
-path="res://.godot/imported/underworld_tilesheet.png-eb51d0ac2f60e0c65cd0905201b94610.ctex"
+uid="uid://b77wohp6d3y7k"
+path="res://.godot/imported/Tileset Spring.png-a87bc0a3ff2477cf497a8970efc126f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/Sprites/underworld_tilesheet.png"
-dest_files=["res://.godot/imported/underworld_tilesheet.png-eb51d0ac2f60e0c65cd0905201b94610.ctex"]
+source_file="res://World/Sprites/Tileset Spring.png"
+dest_files=["res://.godot/imported/Tileset Spring.png-a87bc0a3ff2477cf497a8970efc126f9.ctex"]
 
 [params]
 
