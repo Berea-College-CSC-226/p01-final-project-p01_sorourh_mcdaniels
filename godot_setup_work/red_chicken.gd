@@ -1,15 +1,35 @@
 extends CharacterBody2D
 
-class_name Player
+@onready var red_chicken: AnimatedSprite2D =  $RedChicken
+@export var target: Player
+
 var cardinal_direction: Vector2 = Vector2.DOWN
 var direction : Vector2= Vector2.ZERO
 var state: String = "idle"
+
 var speed: float = 100.0
 
-@onready var animation_player: AnimatedSprite2D = $Player
+@export var follow_distance = 40.0  # Stop when this close to the player
+@export var join_radius = 50.0      # How close player must be to "touch" them
+
+var target_player: Player = null
+var is_in_party: bool = false
 
 
-
+func _calculate_velocity():
+	var distanceToTarget = 3
+	var targetPosition = target.position - Vector2(0,0)
+	
+	if position.distance_to(targetPosition) > distanceToTarget:
+		var direction = (targetPosition - position).normalized()
+		velocity = direction * speed 
+	elif position.y - targetPosition.y < -1 || position.y - targetPosition.y > 1:
+		velocity.x = 0
+	elif position.x - targetPosition.y < -1 || position.x - targetPosition.y > 1:
+		velocity.y = 0
+	else:
+		velocity = Vector2.ZERO
+	
 
 func _process(delta: float) -> void:
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
@@ -18,8 +38,9 @@ func _process(delta: float) -> void:
 	velocity = direction * speed
 	if SetState() == true || SetDirection() == true:
 		UpdateAnimation()
-	
-func _physics_process(delta):
+
+func _physics_process(delta: float) -> void:
+	_calculate_velocity()
 	move_and_slide()
 
 func SetDirection() -> bool : 
@@ -36,7 +57,7 @@ func SetDirection() -> bool :
 		return false
 	else:
 		cardinal_direction = new_dir
-		animation_player.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1
+		red_chicken.scale.x = 1 if cardinal_direction == Vector2.LEFT else -1
 		return true
 	
 	
@@ -49,7 +70,7 @@ func SetState()-> bool:
 		return true 
 	
 func UpdateAnimation():
-	animation_player.play( state + "_" + AnimDirection() )
+	red_chicken.play( state + "_" + AnimDirection() )
 	
 func AnimDirection(): 
 	if cardinal_direction == Vector2.DOWN:
