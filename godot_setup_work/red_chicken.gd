@@ -9,12 +9,6 @@ var state: String = "idle"
 
 var speed: float = 100.0
 
-@export var follow_distance = 40.0  # Stop when this close to the player
-@export var join_radius = 50.0      # How close player must be to "touch" them
-
-var target_player: Player = null
-var is_in_party: bool = false
-
 
 func _calculate_velocity():
 	var distanceToTarget = 3
