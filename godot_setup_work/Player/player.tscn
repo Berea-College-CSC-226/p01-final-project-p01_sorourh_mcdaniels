@@ -4,6 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://crwu1y30hein1" path="res://Player/Sprites/Walk.png" id="2_4ntmi"]
 [ext_resource type="Texture2D" uid="uid://cyecyb8onsprv" path="res://Player/Sprites/Idle.png" id="2_btcbx"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_btcbx"]
+radius = 4.0
+height = 8.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_gwnis"]
 atlas = ExtResource("2_btcbx")
 region = Rect2(0, 0, 32, 32)
@@ -262,9 +266,8 @@ animations = [{
 script = ExtResource("1_4ntmi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1534114202]
-light_mask = 2
-visibility_layer = 2
-one_way_collision = true
+position = Vector2(0, 6)
+shape = SubResource("CapsuleShape2D_btcbx")
 
 [node name="Player" type="AnimatedSprite2D" parent="." unique_id=852794741]
 sprite_frames = SubResource("SpriteFrames_j2n6q")

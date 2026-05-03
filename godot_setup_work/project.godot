@@ -10,10 +10,9 @@ config_version=5
 
 [application]
 
-config/name="CSC226_Project"
-run/main_scene="res://playground.tscn"
+config/name="p01-final-project-the-underworld"
+run/main_scene="res://Comprehensive/playground.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 
@@ -54,6 +53,13 @@ click={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(190, 26),"global_position":Vector2(196, 73),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":true,"script":null)
 ]
 }
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="World"
+2d_physics/layer_3="Interactions"
+2d_physics/layer_4="Props"
 
 [physics]
 

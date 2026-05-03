@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dixlnkg016acl"]
+
+[ext_resource type="PackedScene" uid="uid://cgc38ogpsomxy" path="res://World/world.tscn" id="1_nhr0a"]
+[ext_resource type="PackedScene" uid="uid://dersagfdoficg" path="res://Player/player.tscn" id="2_xfp12"]
+
+[node name="Playground" type="Node2D" unique_id=848886580]
+
+[node name="World" parent="." unique_id=1994279131 instance=ExtResource("1_nhr0a")]
+
+[node name="Player" parent="." unique_id=576445308 instance=ExtResource("2_xfp12")]
+collision_layer = 2
