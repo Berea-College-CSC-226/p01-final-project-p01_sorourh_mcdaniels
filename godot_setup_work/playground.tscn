@@ -568,6 +568,8 @@ animations = [{
 
 [node name="Player" parent="." unique_id=576445308 instance=ExtResource("1_rupst")]
 position = Vector2(28, 56)
+collision_layer = 0
+collision_mask = 0
 
 [node name="RedChicken" type="CharacterBody2D" parent="." unique_id=1826768127 node_paths=PackedStringArray("target")]
 position = Vector2(54, 7)
