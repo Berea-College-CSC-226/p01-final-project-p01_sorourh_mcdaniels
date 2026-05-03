@@ -5,7 +5,8 @@ var direction : Vector2= Vector2.ZERO
 var state: String = "idle"
 var speed: float = 100.0
 
-@onready var animation_player: AnimatedSprite2D = $AnimatedSprite2D
+@onready var animation_player: AnimatedSprite2D = $Player
+
 
 
 

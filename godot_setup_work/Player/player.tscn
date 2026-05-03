@@ -263,7 +263,7 @@ script = ExtResource("1_4ntmi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1534114202]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=852794741]
+[node name="Player" type="AnimatedSprite2D" parent="." unique_id=852794741]
 sprite_frames = SubResource("SpriteFrames_j2n6q")
 animation = &"walk_side"
-frame_progress = 0.686234
+frame_progress = 0.8459293
