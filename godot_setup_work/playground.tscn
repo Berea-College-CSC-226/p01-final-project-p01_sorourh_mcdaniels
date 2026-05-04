@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://ca820275rrfkc"]
 
 [ext_resource type="PackedScene" uid="uid://dersagfdoficg" path="res://Player/player.tscn" id="1_rupst"]
-[ext_resource type="Script" uid="uid://cl4pupv8pg6jo" path="res://red_chicken.gd" id="2_pi42a"]
+[ext_resource type="Script" uid="uid://cl4pupv8pg6jo" path="res://Animals/Scripts/red_chicken.gd" id="2_pi42a"]
 [ext_resource type="Texture2D" uid="uid://darh31cfe47t5" path="res://Animals/Sprites/Chicken Red.png" id="2_v7dth"]
 [ext_resource type="Script" uid="uid://ccrm126ukqnqj" path="res://baby_chicken.gd" id="4_h1jm5"]
 [ext_resource type="Texture2D" uid="uid://dkafjoepbfnuh" path="res://Animals/Sprites/Baby Chicken Yellow.png" id="5_pio1y"]
-[ext_resource type="Script" uid="uid://jomaahk75b54" path="res://female_cow.gd" id="6_pi42a"]
+[ext_resource type="Script" uid="uid://jomaahk75b54" path="res://Animals/Scripts/female_cow.gd" id="6_pi42a"]
 [ext_resource type="Texture2D" uid="uid://dosu6kl8olufx" path="res://Animals/Sprites/Female Cow Brown.png" id="6_te8jg"]
 [ext_resource type="Texture2D" uid="uid://ctq67kva4312s" path="res://Animals/Sprites/Male Cow Brown.png" id="7_yjl7g"]
 [ext_resource type="Texture2D" uid="uid://cj4wojwaupxhl" path="res://Animals/Sprites/Chicken Blonde  Green.png" id="8_f7pug"]
-[ext_resource type="Script" uid="uid://b2r0l8gul7v8s" path="res://male_cow.gd" id="8_pio1y"]
-[ext_resource type="Script" uid="uid://q64qsbboiye6" path="res://blonde_chicken.gd" id="10_te8jg"]
+[ext_resource type="Script" uid="uid://b2r0l8gul7v8s" path="res://Animals/Scripts/male_cow.gd" id="8_pio1y"]
+[ext_resource type="Script" uid="uid://q64qsbboiye6" path="res://Animals/Scripts/blonde_chicken.gd" id="10_te8jg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1kmt7"]
 atlas = ExtResource("2_v7dth")
