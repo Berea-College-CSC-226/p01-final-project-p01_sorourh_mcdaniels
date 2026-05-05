@@ -6,6 +6,8 @@ var direction : Vector2= Vector2.ZERO
 var state: String = "idle"
 var speed: float = 100.0
 
+var party: Array[Node2D] = []
+
 @onready var animation_player: AnimatedSprite2D = $Player
 
 
@@ -57,3 +59,13 @@ func AnimDirection():
 		return "up"
 	else:
 		return "side"
+
+
+func add_to_party(animal: Node2D) -> void:
+	if animal in party:
+		return
+	if party.is_empty():
+		animal.start_following(self)
+	else:
+		animal.start_following(party.back())
+	party.append(animal)

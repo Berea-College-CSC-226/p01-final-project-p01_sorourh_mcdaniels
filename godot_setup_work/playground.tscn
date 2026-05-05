@@ -1,16 +1,12 @@
 [gd_scene format=3 uid="uid://ca820275rrfkc"]
 
 [ext_resource type="PackedScene" uid="uid://dersagfdoficg" path="res://Player/player.tscn" id="1_rupst"]
-[ext_resource type="Script" uid="uid://cl4pupv8pg6jo" path="res://Animals/Scripts/red_chicken.gd" id="2_pi42a"]
+[ext_resource type="Script" uid="uid://cl4pupv8pg6jo" path="res://Animals/Scripts/animal.gd" id="2_pi42a"]
 [ext_resource type="Texture2D" uid="uid://darh31cfe47t5" path="res://Animals/Sprites/Chicken Red.png" id="2_v7dth"]
-[ext_resource type="Script" uid="uid://ccrm126ukqnqj" path="res://baby_chicken.gd" id="4_h1jm5"]
 [ext_resource type="Texture2D" uid="uid://dkafjoepbfnuh" path="res://Animals/Sprites/Baby Chicken Yellow.png" id="5_pio1y"]
-[ext_resource type="Script" uid="uid://jomaahk75b54" path="res://Animals/Scripts/female_cow.gd" id="6_pi42a"]
 [ext_resource type="Texture2D" uid="uid://dosu6kl8olufx" path="res://Animals/Sprites/Female Cow Brown.png" id="6_te8jg"]
 [ext_resource type="Texture2D" uid="uid://ctq67kva4312s" path="res://Animals/Sprites/Male Cow Brown.png" id="7_yjl7g"]
 [ext_resource type="Texture2D" uid="uid://cj4wojwaupxhl" path="res://Animals/Sprites/Chicken Blonde  Green.png" id="8_f7pug"]
-[ext_resource type="Script" uid="uid://b2r0l8gul7v8s" path="res://Animals/Scripts/male_cow.gd" id="8_pio1y"]
-[ext_resource type="Script" uid="uid://q64qsbboiye6" path="res://Animals/Scripts/blonde_chicken.gd" id="10_te8jg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1kmt7"]
 atlas = ExtResource("2_v7dth")
@@ -969,54 +965,74 @@ script = ExtResource("2_pi42a")
 light_mask = 2
 visibility_layer = 2
 
-[node name="RedChicken" type="AnimatedSprite2D" parent="RedChicken" unique_id=736166664]
+[node name="Animal" type="AnimatedSprite2D" parent="RedChicken" unique_id=736166664]
 position = Vector2(10, 62)
 sprite_frames = SubResource("SpriteFrames_jgc46")
 animation = &"idle_down"
 
+[node name="Area2D" type="Area2D" parent="RedChicken" unique_id=709596445]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RedChicken/Area2D" unique_id=392526032]
+
 [node name="BabyChicken" type="CharacterBody2D" parent="." unique_id=321527700]
 position = Vector2(54, 7)
-script = ExtResource("4_h1jm5")
+script = ExtResource("2_pi42a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BabyChicken" unique_id=1253287622]
 
-[node name="BabyChicken" type="AnimatedSprite2D" parent="BabyChicken" unique_id=1043570513]
+[node name="Animal" type="AnimatedSprite2D" parent="BabyChicken" unique_id=1043570513]
 sprite_frames = SubResource("SpriteFrames_md5nv")
 animation = &"walk_up"
 frame = 2
 frame_progress = 0.9365795
 
+[node name="Area2D" type="Area2D" parent="BabyChicken" unique_id=1926410984]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BabyChicken/Area2D" unique_id=1860142452]
+
 [node name="FemaleCow" type="CharacterBody2D" parent="." unique_id=1146009160]
 position = Vector2(42, 86)
-script = ExtResource("6_pi42a")
+script = ExtResource("2_pi42a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FemaleCow" unique_id=935996394]
 
-[node name="FemaleCow" type="AnimatedSprite2D" parent="FemaleCow" unique_id=1877527600]
+[node name="Animal" type="AnimatedSprite2D" parent="FemaleCow" unique_id=1877527600]
 position = Vector2(1, -6)
 sprite_frames = SubResource("SpriteFrames_pactg")
 animation = &"idle_side"
 frame = 2
 frame_progress = 0.9896618
 
+[node name="Area2D" type="Area2D" parent="FemaleCow" unique_id=290683143]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FemaleCow/Area2D" unique_id=1852064143]
+
 [node name="MaleCow" type="CharacterBody2D" parent="." unique_id=1836310488]
 position = Vector2(40, 152)
-script = ExtResource("8_pio1y")
+script = ExtResource("2_pi42a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MaleCow" unique_id=1225232312]
 
-[node name="MaleCow" type="AnimatedSprite2D" parent="MaleCow" unique_id=1525316619]
+[node name="Animal" type="AnimatedSprite2D" parent="MaleCow" unique_id=1525316619]
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_ycdrs")
 animation = &"walk_up"
 
+[node name="Area2D" type="Area2D" parent="MaleCow" unique_id=1769814892]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MaleCow/Area2D" unique_id=392455831]
+
 [node name="BlondeChicken" type="CharacterBody2D" parent="." unique_id=105629080]
 position = Vector2(103, 28)
-script = ExtResource("10_te8jg")
+script = ExtResource("2_pi42a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BlondeChicken" unique_id=245650591]
 
-[node name="BlondeChicken" type="AnimatedSprite2D" parent="BlondeChicken" unique_id=1727986987]
+[node name="Animal" type="AnimatedSprite2D" parent="BlondeChicken" unique_id=1727986987]
 position = Vector2(-2, 0)
 sprite_frames = SubResource("SpriteFrames_5m40n")
 animation = &"walk_up"
+
+[node name="Area2D" type="Area2D" parent="BlondeChicken" unique_id=1072676515]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlondeChicken/Area2D" unique_id=2027639640]
