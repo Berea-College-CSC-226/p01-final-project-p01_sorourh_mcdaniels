@@ -6,12 +6,13 @@ var direction : Vector2= Vector2.ZERO
 var state: String = "idle"
 var speed: float = 100.0
 
+var party: Array[Node2D] = []
+
 @onready var animation_player: AnimatedSprite2D = $Player
 
 
 
-
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
 	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
 	
@@ -19,7 +20,7 @@ func _process(delta: float) -> void:
 	if SetState() == true || SetDirection() == true:
 		UpdateAnimation()
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	move_and_slide()
 
 func SetDirection() -> bool : 
@@ -58,3 +59,13 @@ func AnimDirection():
 		return "up"
 	else:
 		return "side"
+
+
+func add_to_party(animal: Node2D) -> void:
+	if animal in party:
+		return
+	if party.is_empty():
+		animal.start_following(self)
+	else:
+		animal.start_following(party.back())
+	party.append(animal)
