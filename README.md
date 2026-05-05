@@ -145,6 +145,8 @@ into your own, following the process we've discussed in previous assignments, th
 ```
 
 ### References 
+Sprites:
+https://emanuelledev.itch.io/farm-rpg
 
 Test Suites: 
 https://gut.readthedocs.io/en/v9.6.0/ 
