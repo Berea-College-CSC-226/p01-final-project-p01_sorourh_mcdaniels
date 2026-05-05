@@ -1536,7 +1536,7 @@ pattern_0 = SubResource("TileMapPattern_3f78f")
 pattern_1 = SubResource("TileMapPattern_k8do8")
 
 [node name="World" type="Node2D" unique_id=1994279131]
-position = Vector2(-2, 0)
+position = Vector2(-2, -1)
 
 [node name="Tilemap Layers" type="Node2D" parent="." unique_id=1909809285]
 
@@ -1570,6 +1570,10 @@ position = Vector2(0, 3)
 sprite_frames = SubResource("SpriteFrames_x0pyu")
 animation = &"idle_down"
 frame_progress = 0.915115
+
+[node name="Area2D" type="Area2D" parent="Tilemap Layers/RedChicken" unique_id=382269830]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/RedChicken/Area2D" unique_id=839535293]
 
 [node name="BabyChicken" type="CharacterBody2D" parent="Tilemap Layers" unique_id=1690761696]
 position = Vector2(20, 21)
@@ -1624,6 +1628,7 @@ position = Vector2(251, 195)
 collision_mask = 10
 
 [node name="Camera2D" type="Camera2D" parent="Tilemap Layers/Player" unique_id=589683903]
+position = Vector2(0, 1)
 
 [node name="objects" type="TileMapLayer" parent="Tilemap Layers" unique_id=1674766852]
 position = Vector2(-28, -5)
