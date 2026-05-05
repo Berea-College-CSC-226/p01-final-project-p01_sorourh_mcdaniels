@@ -146,10 +146,13 @@ into your own, following the process we've discussed in previous assignments, th
 
 ### References 
 
-❗Throughout this project, you will likely use outside resources. Reference all ideas which are not your own, 
-and describe how you integrated the ideas or code into your program. This includes online sources, people who have 
-helped you, AI tools you've used, and any other resources that are not solely your own contribution. Update this 
-section as you go. DO NOT forget about it!
+Test Suites: 
+https://gut.readthedocs.io/en/v9.6.0/ 
+
+Character Animations:
+https://youtu.be/QPeycNt29tY?si=5frQH34MKu_43NLg 
+https://youtu.be/rKQrp2U11Ag?si=xJddWZjqW3ncz-_z
+
 
 ---
 
