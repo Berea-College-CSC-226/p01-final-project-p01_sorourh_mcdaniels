@@ -692,6 +692,8 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w47uh"]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_2yo0f"]
 atlas = ExtResource("8_5xkvv")
 region = Rect2(0, 0, 16, 16)
@@ -1568,8 +1570,10 @@ animation = &"idle_down"
 frame_progress = 0.915115
 
 [node name="Area2D" type="Area2D" parent="Tilemap Layers/RedChicken" unique_id=382269830]
+collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/RedChicken/Area2D" unique_id=839535293]
+shape = SubResource("RectangleShape2D_w47uh")
 
 [node name="RedChicken2" type="CharacterBody2D" parent="Tilemap Layers" unique_id=1515842107]
 position = Vector2(257, 287)
@@ -1585,10 +1589,11 @@ sprite_frames = SubResource("SpriteFrames_x0pyu")
 animation = &"idle_down"
 frame_progress = 0.915115
 
-[node name="Area2D" type="Area2D" parent="Tilemap Layers/RedChicken2" unique_id=1546696399]
-position = Vector2(-3, 0)
+[node name="Area2D" type="Area2D" parent="Tilemap Layers/RedChicken2" unique_id=220343942]
+collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/RedChicken2/Area2D" unique_id=5139477]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/RedChicken2/Area2D" unique_id=951927422]
+shape = SubResource("RectangleShape2D_w47uh")
 
 [node name="BabyChicken" type="CharacterBody2D" parent="Tilemap Layers" unique_id=1690761696]
 position = Vector2(20, 21)
@@ -1602,9 +1607,11 @@ sprite_frames = SubResource("SpriteFrames_dg1ng")
 animation = &"idle_down"
 frame_progress = 0.28158575
 
-[node name="Area2D" type="Area2D" parent="Tilemap Layers/BabyChicken" unique_id=912248282]
+[node name="Area2D" type="Area2D" parent="Tilemap Layers/BabyChicken" unique_id=39259781]
+collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/BabyChicken/Area2D" unique_id=908308776]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/BabyChicken/Area2D" unique_id=924173351]
+shape = SubResource("RectangleShape2D_w47uh")
 
 [node name="BabyChicken2" type="CharacterBody2D" parent="Tilemap Layers" unique_id=2142763965]
 position = Vector2(400, -23)
@@ -1618,10 +1625,11 @@ sprite_frames = SubResource("SpriteFrames_dg1ng")
 animation = &"idle_down"
 frame_progress = 0.28158575
 
-[node name="Area2D" type="Area2D" parent="Tilemap Layers/BabyChicken2" unique_id=1912232823]
-position = Vector2(-1, 0)
+[node name="Area2D" type="Area2D" parent="Tilemap Layers/BabyChicken2" unique_id=2135901340]
+collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/BabyChicken2/Area2D" unique_id=892970583]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/BabyChicken2/Area2D" unique_id=290067647]
+shape = SubResource("RectangleShape2D_w47uh")
 
 [node name="FemaleCow" type="CharacterBody2D" parent="Tilemap Layers" unique_id=1907108267]
 position = Vector2(568, 21)
@@ -1635,10 +1643,11 @@ sprite_frames = SubResource("SpriteFrames_yfuda")
 animation = &"idle_side"
 frame_progress = 0.6348957
 
-[node name="Area2D" type="Area2D" parent="Tilemap Layers/FemaleCow" unique_id=1431032559]
-position = Vector2(-10, -3)
+[node name="Area2D" type="Area2D" parent="Tilemap Layers/FemaleCow" unique_id=1073618528]
+collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/FemaleCow/Area2D" unique_id=2026802494]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/FemaleCow/Area2D" unique_id=1132662387]
+shape = SubResource("RectangleShape2D_w47uh")
 
 [node name="FemaleCow2" type="CharacterBody2D" parent="Tilemap Layers" unique_id=676789315]
 position = Vector2(107, 19)
@@ -1647,16 +1656,18 @@ script = ExtResource("13_dqu5g")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/FemaleCow2" unique_id=1607908597]
 
 [node name="Animal" type="AnimatedSprite2D" parent="Tilemap Layers/FemaleCow2" unique_id=1570352691]
-position = Vector2(26.5, 7)
+position = Vector2(4, -7)
 scale = Vector2(0.96875, 1)
 sprite_frames = SubResource("SpriteFrames_yfuda")
 animation = &"idle_side"
 frame_progress = 0.6348957
 
-[node name="Area2D" type="Area2D" parent="Tilemap Layers/FemaleCow2" unique_id=1346808309]
-position = Vector2(11, 4)
+[node name="Area2D" type="Area2D" parent="Tilemap Layers/FemaleCow2" unique_id=1559279194]
+collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/FemaleCow2/Area2D" unique_id=1235894402]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/FemaleCow2/Area2D" unique_id=119289461]
+position = Vector2(5, 0)
+shape = SubResource("RectangleShape2D_w47uh")
 
 [node name="MaleCow" type="CharacterBody2D" parent="Tilemap Layers" unique_id=703276418]
 position = Vector2(-99, 224)
@@ -1670,9 +1681,11 @@ sprite_frames = SubResource("SpriteFrames_i8dl0")
 animation = &"idle_down"
 frame_progress = 0.16510932
 
-[node name="Area2D" type="Area2D" parent="Tilemap Layers/MaleCow" unique_id=1583343170]
+[node name="Area2D" type="Area2D" parent="Tilemap Layers/MaleCow" unique_id=1893084153]
+collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/MaleCow/Area2D" unique_id=19558951]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/MaleCow/Area2D" unique_id=112615896]
+shape = SubResource("RectangleShape2D_w47uh")
 
 [node name="MaleCow2" type="CharacterBody2D" parent="Tilemap Layers" unique_id=1020054870]
 position = Vector2(494, 232)
@@ -1686,10 +1699,11 @@ sprite_frames = SubResource("SpriteFrames_i8dl0")
 animation = &"idle_down"
 frame_progress = 0.16510932
 
-[node name="Area2D" type="Area2D" parent="Tilemap Layers/MaleCow2" unique_id=10185375]
-position = Vector2(3, -2)
+[node name="Area2D" type="Area2D" parent="Tilemap Layers/MaleCow2" unique_id=805004442]
+collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/MaleCow2/Area2D" unique_id=1371522821]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/MaleCow2/Area2D" unique_id=988639875]
+shape = SubResource("RectangleShape2D_w47uh")
 
 [node name="BlondeChicken" type="CharacterBody2D" parent="Tilemap Layers" unique_id=794882705]
 position = Vector2(58, 102)
@@ -1703,9 +1717,11 @@ sprite_frames = SubResource("SpriteFrames_jf64p")
 animation = &"idle_down"
 frame_progress = 0.92214984
 
-[node name="Area2D" type="Area2D" parent="Tilemap Layers/BlondeChicken" unique_id=1002639844]
+[node name="Area2D" type="Area2D" parent="Tilemap Layers/BlondeChicken" unique_id=1173141922]
+collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/BlondeChicken/Area2D" unique_id=916293834]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/BlondeChicken/Area2D" unique_id=747422906]
+shape = SubResource("RectangleShape2D_w47uh")
 
 [node name="BlondeChicken2" type="CharacterBody2D" parent="Tilemap Layers" unique_id=1906432124]
 position = Vector2(546, 173)
@@ -1719,12 +1735,13 @@ sprite_frames = SubResource("SpriteFrames_jf64p")
 animation = &"idle_down"
 frame_progress = 0.92214984
 
-[node name="Area2D" type="Area2D" parent="Tilemap Layers/BlondeChicken2" unique_id=1309683239]
-position = Vector2(5, 5)
+[node name="Area2D" type="Area2D" parent="Tilemap Layers/BlondeChicken2" unique_id=1642410019]
+collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/BlondeChicken2/Area2D" unique_id=1010613679]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/BlondeChicken2/Area2D" unique_id=1304386101]
+shape = SubResource("RectangleShape2D_w47uh")
 
-[node name="Player" parent="Tilemap Layers" unique_id=576445308 instance=ExtResource("4_3f78f")]
+[node name="Player" parent="Tilemap Layers" unique_id=576445308 groups=["player"] instance=ExtResource("4_3f78f")]
 position = Vector2(251, 195)
 collision_mask = 10
 

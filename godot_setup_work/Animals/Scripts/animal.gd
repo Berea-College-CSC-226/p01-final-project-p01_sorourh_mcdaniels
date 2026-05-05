@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 enum State { IDLE, FOLLOWING }
 
-@export var follow_speed: float = 90.0
-@export var follow_distance: float = 28.0
+@export var follow_speed: float = 95.0
+@export var follow_distance: float = 20.0
 
 var state: State = State.IDLE
 var follow_target: Node2D = null
@@ -14,6 +14,8 @@ var cardinal_direction: Vector2 = Vector2.DOWN
 
 
 func _ready() -> void:
+	detection_area.body_entered.connect(_on_body_entered)
+	anim.play("idle_down")
 	detection_area.body_entered.connect(_on_body_entered)
 	anim.play("idle_down")
 
@@ -52,7 +54,7 @@ func _update_cardinal(dir: Vector2) -> void:
 	if new_dir != cardinal_direction:
 		cardinal_direction = new_dir
 		# Mirror sprite for left/right just like your player does
-		anim.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1
+		anim.scale.x = 1 if cardinal_direction == Vector2.LEFT else -1
 
 
 func _anim_direction() -> String:
