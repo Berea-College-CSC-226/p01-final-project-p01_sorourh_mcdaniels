@@ -692,7 +692,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_w47uh"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lo5ox"]
+size = Vector2(16, 17.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2aik"]
+size = Vector2(18.5, 17)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2yo0f"]
 atlas = ExtResource("8_5xkvv")
@@ -850,6 +854,12 @@ animations = [{
 "name": &"walk_up",
 "speed": 5.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wqet"]
+size = Vector2(12, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w47uh"]
+size = Vector2(12, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rngk1"]
 atlas = ExtResource("10_xw5lg")
@@ -1036,6 +1046,12 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_awrha"]
+size = Vector2(23, 20.9375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f23eu"]
+size = Vector2(25, 20)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_md5nv"]
 atlas = ExtResource("12_26uyv")
 region = Rect2(0, 32, 32, 32)
@@ -1221,6 +1237,12 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oeat8"]
+size = Vector2(15, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xkvv"]
+size = Vector2(17, 21.875)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ufreq"]
 atlas = ExtResource("14_o6lw0")
 region = Rect2(0, 0, 16, 16)
@@ -1394,6 +1416,113 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kcyjf"]
+size = Vector2(18, 16.875)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xw5lg"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ufreq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dsrt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4eiv7")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ufreq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dsrt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4eiv7")
+}],
+"loop": true,
+"name": &"idle_side",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_av3u1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aih2d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8i7s")
+}],
+"loop": true,
+"name": &"idle_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtre7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v6mfq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jd2y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihyg8")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qm842")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbtkf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u360p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cw3tu")
+}],
+"loop": true,
+"name": &"walk_side",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l13kp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgcng")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ny2vg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sraso")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0lysu"]
+size = Vector2(17, 18.9375)
+
 [sub_resource type="TileMapPattern" id="TileMapPattern_3f78f"]
 tile_data = PackedInt32Array(65536, 589826, 1, 131072, 589826, 2, 196608, 589826, 3, 262144, 589826, 4, 327680, 589826, 5, 1, 655362, 0, 65537, 655362, 1, 131073, 655362, 2, 196609, 655362, 3, 262145, 655362, 4, 327681, 655362, 5, 2, 720898, 0, 65538, 720898, 1, 131074, 720898, 2, 196610, 720898, 3, 262146, 720898, 4, 327682, 720898, 5, 393218, 720898, 6, 3, 786434, 0, 65539, 786434, 1, 131075, 786434, 2, 196611, 786434, 3, 262147, 786434, 4, 327683, 786434, 5, 393219, 786434, 6, 65540, 851970, 1, 131076, 851970, 2, 196612, 851970, 3, 262148, 851970, 4, 327684, 851970, 5)
 
@@ -1558,7 +1687,7 @@ tile_set = SubResource("TileSet_8a836")
 [node name="Animals" type="Node2D" parent="Tilemap Layers" unique_id=607229332]
 
 [node name="RedChicken" type="CharacterBody2D" parent="Tilemap Layers/Animals" unique_id=323675277]
-position = Vector2(-95, -29)
+position = Vector2(-99, -26)
 script = ExtResource("13_dqu5g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/RedChicken" unique_id=1210800610]
@@ -1566,7 +1695,6 @@ light_mask = 2
 visibility_layer = 2
 
 [node name="Animal" type="AnimatedSprite2D" parent="Tilemap Layers/Animals/RedChicken" unique_id=757354517]
-position = Vector2(0, 3)
 sprite_frames = SubResource("SpriteFrames_x0pyu")
 animation = &"idle_down"
 frame_progress = 0.915115
@@ -1575,10 +1703,11 @@ frame_progress = 0.915115
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/RedChicken/Area2D" unique_id=839535293]
-shape = SubResource("RectangleShape2D_w47uh")
+position = Vector2(0, 0.0625)
+shape = SubResource("RectangleShape2D_lo5ox")
 
 [node name="RedChicken2" type="CharacterBody2D" parent="Tilemap Layers/Animals" unique_id=1515842107]
-position = Vector2(257, 287)
+position = Vector2(257, 288)
 script = ExtResource("13_dqu5g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/RedChicken2" unique_id=790866359]
@@ -1586,7 +1715,6 @@ light_mask = 2
 visibility_layer = 2
 
 [node name="Animal" type="AnimatedSprite2D" parent="Tilemap Layers/Animals/RedChicken2" unique_id=1894144753]
-position = Vector2(1, -2)
 sprite_frames = SubResource("SpriteFrames_x0pyu")
 animation = &"idle_down"
 frame_progress = 0.915115
@@ -1595,7 +1723,7 @@ frame_progress = 0.915115
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/RedChicken2/Area2D" unique_id=951927422]
-shape = SubResource("RectangleShape2D_w47uh")
+shape = SubResource("RectangleShape2D_h2aik")
 
 [node name="BabyChicken" type="CharacterBody2D" parent="Tilemap Layers/Animals" unique_id=1690761696]
 position = Vector2(20, 21)
@@ -1613,16 +1741,16 @@ frame_progress = 0.28158575
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/BabyChicken/Area2D" unique_id=924173351]
-shape = SubResource("RectangleShape2D_w47uh")
+position = Vector2(0, 0.25)
+shape = SubResource("RectangleShape2D_0wqet")
 
 [node name="BabyChicken2" type="CharacterBody2D" parent="Tilemap Layers/Animals" unique_id=2142763965]
-position = Vector2(400, -23)
+position = Vector2(402, -18)
 script = ExtResource("13_dqu5g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/BabyChicken2" unique_id=28268341]
 
 [node name="Animal" type="AnimatedSprite2D" parent="Tilemap Layers/Animals/BabyChicken2" unique_id=261073078]
-position = Vector2(6, 2)
 sprite_frames = SubResource("SpriteFrames_dg1ng")
 animation = &"idle_down"
 frame_progress = 0.28158575
@@ -1631,6 +1759,7 @@ frame_progress = 0.28158575
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/BabyChicken2/Area2D" unique_id=290067647]
+position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_w47uh")
 
 [node name="FemaleCow" type="CharacterBody2D" parent="Tilemap Layers/Animals" unique_id=1907108267]
@@ -1649,7 +1778,8 @@ frame_progress = 0.6348957
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/FemaleCow/Area2D" unique_id=1132662387]
-shape = SubResource("RectangleShape2D_w47uh")
+position = Vector2(0.5, 0.46875)
+shape = SubResource("RectangleShape2D_awrha")
 
 [node name="FemaleCow2" type="CharacterBody2D" parent="Tilemap Layers/Animals" unique_id=676789315]
 position = Vector2(107, 19)
@@ -1668,8 +1798,8 @@ frame_progress = 0.6348957
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/FemaleCow2/Area2D" unique_id=119289461]
-position = Vector2(5, 0)
-shape = SubResource("RectangleShape2D_w47uh")
+position = Vector2(2.5, -1)
+shape = SubResource("RectangleShape2D_f23eu")
 
 [node name="MaleCow" type="CharacterBody2D" parent="Tilemap Layers/Animals" unique_id=703276418]
 position = Vector2(-99, 224)
@@ -1687,16 +1817,16 @@ frame_progress = 0.16510932
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/MaleCow/Area2D" unique_id=112615896]
-shape = SubResource("RectangleShape2D_w47uh")
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_oeat8")
 
 [node name="MaleCow2" type="CharacterBody2D" parent="Tilemap Layers/Animals" unique_id=1020054870]
-position = Vector2(494, 232)
+position = Vector2(497, 219)
 script = ExtResource("13_dqu5g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/MaleCow2" unique_id=786932793]
 
 [node name="Animal" type="AnimatedSprite2D" parent="Tilemap Layers/Animals/MaleCow2" unique_id=1654126897]
-position = Vector2(5, -11)
 sprite_frames = SubResource("SpriteFrames_i8dl0")
 animation = &"idle_down"
 frame_progress = 0.16510932
@@ -1705,7 +1835,8 @@ frame_progress = 0.16510932
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/MaleCow2/Area2D" unique_id=988639875]
-shape = SubResource("RectangleShape2D_w47uh")
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_5xkvv")
 
 [node name="BlondeChicken" type="CharacterBody2D" parent="Tilemap Layers/Animals" unique_id=794882705]
 position = Vector2(58, 102)
@@ -1723,7 +1854,8 @@ frame_progress = 0.92214984
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/BlondeChicken/Area2D" unique_id=747422906]
-shape = SubResource("RectangleShape2D_w47uh")
+position = Vector2(-1, -0.4375)
+shape = SubResource("RectangleShape2D_kcyjf")
 
 [node name="BlondeChicken2" type="CharacterBody2D" parent="Tilemap Layers/Animals" unique_id=1906432124]
 position = Vector2(546, 173)
@@ -1732,16 +1864,14 @@ script = ExtResource("13_dqu5g")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/BlondeChicken2" unique_id=868885015]
 
 [node name="Animal" type="AnimatedSprite2D" parent="Tilemap Layers/Animals/BlondeChicken2" unique_id=619518313]
-position = Vector2(4, 1)
-sprite_frames = SubResource("SpriteFrames_jf64p")
+sprite_frames = SubResource("SpriteFrames_xw5lg")
 animation = &"idle_down"
-frame_progress = 0.92214984
 
 [node name="Area2D" type="Area2D" parent="Tilemap Layers/Animals/BlondeChicken2" unique_id=1642410019]
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap Layers/Animals/BlondeChicken2/Area2D" unique_id=1304386101]
-shape = SubResource("RectangleShape2D_w47uh")
+shape = SubResource("RectangleShape2D_0lysu")
 
 [node name="Player" parent="Tilemap Layers" unique_id=576445308 groups=["player"] instance=ExtResource("4_3f78f")]
 position = Vector2(251, 195)
