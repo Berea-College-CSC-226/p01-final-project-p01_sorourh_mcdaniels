@@ -288,7 +288,6 @@ animations = [{
 script = ExtResource("1_4ntmi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1534114202]
-position = Vector2(0, 6)
 shape = SubResource("CapsuleShape2D_btcbx")
 
 [node name="Player" type="AnimatedSprite2D" parent="." unique_id=852794741]
