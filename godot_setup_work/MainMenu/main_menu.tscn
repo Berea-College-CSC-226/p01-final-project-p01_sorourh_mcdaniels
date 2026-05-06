@@ -1,0 +1,189 @@
+[gd_scene format=3 uid="uid://dvcl427gymcj1"]
+
+[ext_resource type="VideoStream" uid="uid://bu6a5q5xtx423" path="res://MainMenu/Video/main_menu.ogv" id="1_3w4mj"]
+[ext_resource type="Script" uid="uid://yyae78ha6siy" path="res://MainMenu/main_menu.gd" id="1_5de1l"]
+[ext_resource type="FontFile" uid="uid://urc6aewqpkwn" path="res://Font/pixel-game/Pixel Game.otf" id="2_5de1l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0, 0, 0.30980393)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ajn5b"]
+bg_color = Color(0.42352942, 0.42352942, 0.42352942, 0.6745098)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0, 0, 0.30980393)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_po2gx"]
+bg_color = Color(0.42352942, 0.42352942, 0.42352942, 0.6745098)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0, 0, 0.30980393)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kbpwf"]
+bg_color = Color(0.73333335, 0.73333335, 0.73333335, 0.6313726)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0, 0, 0.30980393)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jdgnk"]
+bg_color = Color(0.73, 0.73, 0.73, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0, 0, 0.30980393)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0x8f"]
+bg_color = Color(0.73333335, 0.73333335, 0.73333335, 0.6313726)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0, 0, 0.30980393)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_83n0s"]
+
+[node name="MainMenu" type="Control" unique_id=1005670857]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5de1l")
+
+[node name="Panel" type="Panel" parent="." unique_id=493548723]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Panel" unique_id=1044139701]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_3w4mj")
+autoplay = true
+expand = true
+loop = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=159520110]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -84.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=1589715209]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+size_flags_stretch_ratio = 4.06
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5de1l")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ajn5b")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_po2gx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kbpwf")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_jdgnk")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_r0x8f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_83n0s")
+text = " Start Game "
+
+[node name="Exit" type="Button" parent="VBoxContainer" unique_id=828359092]
+texture_filter = 5
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5de1l")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ajn5b")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_po2gx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kbpwf")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_jdgnk")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_r0x8f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_83n0s")
+text = " EXIT "
+
+[node name="Title" type="Label" parent="." unique_id=977811841]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.319
+anchor_right = 0.5
+anchor_bottom = 0.319
+offset_left = -196.0
+offset_top = -29.130005
+offset_right = 196.0
+offset_bottom = 28.869995
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.25882354)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_5de1l")
+theme_override_font_sizes/font_size = 56
+text = "Sunfire Mountain"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Objective" type="Label" parent="." unique_id=557496575]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.51000005
+anchor_top = 0.546
+anchor_right = 0.51000005
+anchor_bottom = 0.546
+offset_left = -106.80002
+offset_top = -11.419998
+offset_right = 107.19998
+offset_bottom = 11.580002
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.38039216)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5de1l")
+text = "COLLECT ALL THE ANIMALS!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

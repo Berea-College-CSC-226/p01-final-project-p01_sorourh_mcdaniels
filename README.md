@@ -149,12 +149,22 @@ Sprites:
 https://emanuelledev.itch.io/farm-rpg
 
 Test Suites: 
-https://gut.readthedocs.io/en/v9.6.0/ 
+https://gut.readthedocs.io/en/v9.6.0/
+*Claude Code 
 
 Character Animations:
 https://youtu.be/QPeycNt29tY?si=5frQH34MKu_43NLg 
 https://youtu.be/rKQrp2U11Ag?si=xJddWZjqW3ncz-_z
 
+Font:
+https://www.1001fonts.com/pixel-game-font.html 
+
+Main Menu: 
+https://www.youtube.com/watch?v=zHYkcJyE52g
+
+*Claude Code was used for this part because godot doesn't have a native test suite like python does. It mainly uses play testers to test the game. 
+To try to emulate Python, we had to install the GUT plugin, an addon for godot, to try to test the different functionalities of the scripts. 
+The way in which the test suites must be made is repetitive and roundabout, thus we deemed Claude a tool to eliminate that time.
 
 ---
 

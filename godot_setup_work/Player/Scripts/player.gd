@@ -19,6 +19,9 @@ func _process(_delta: float) -> void:
 	velocity = direction * speed
 	if SetState() == true || SetDirection() == true:
 		UpdateAnimation()
+	if len(party) == 10:
+		get_tree().change_scene_to_file("res://WinMenu/WinMenu.tscn")
+
 	
 func _physics_process(_delta):
 	move_and_slide()
