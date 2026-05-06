@@ -1779,4 +1779,4 @@ position = Vector2(251, 195)
 collision_mask = 10
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=589683903]
-position = Vector2(0, 1)
+position = Vector2(-31, -45)
