@@ -31,7 +31,7 @@
     [CRC Card Example](https://docs.google.com/document/d/1JE_3Qmytk_JGztRqkPXWACJwciPH61VCx3idIlBCVFY/edit?usp=sharing)
   - Tables in markdown are not easy, so we suggest saving your CRC card as an image and including the image(s) in the 
     README. You can do this by saving an image in the repository and linking to it. See the sample CRC card below - 
-    and REPLACE it with your own:
+    and REPLACE it with your own: 
   
 ### Player CRC Card
 
