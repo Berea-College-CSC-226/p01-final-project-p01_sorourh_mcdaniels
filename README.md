@@ -145,14 +145,30 @@ into your own, following the process we've discussed in previous assignments, th
 ```
 
 ### References 
+Sprites:
+https://emanuelledev.itch.io/farm-rpg
 
 Test Suites: 
-https://gut.readthedocs.io/en/v9.6.0/ 
+https://gut.readthedocs.io/en/v9.6.0/
+*Claude Code 
+
+TileMap:
+autotiling assistance =  https://youtu.be/LrsfgDyOAJs?si=A0AetnxyslXc5iyc
+spritesheet editing = (paintdotnet) https://www.getpaint.net/index.html
 
 Character Animations:
 https://youtu.be/QPeycNt29tY?si=5frQH34MKu_43NLg 
 https://youtu.be/rKQrp2U11Ag?si=xJddWZjqW3ncz-_z
 
+Font:
+https://www.1001fonts.com/pixel-game-font.html 
+
+Main Menu and Winning Menu: 
+https://www.youtube.com/watch?v=zHYkcJyE52g
+
+*Claude Code was used for this part because godot doesn't have a native test suite like python does. It mainly uses play testers to test the game. 
+To try to emulate Python, we had to install the GUT plugin, an addon for godot, to try to test the different functionalities of the scripts. 
+The way in which the test suites must be made is repetitive and roundabout, thus we deemed Claude a tool to eliminate that time.
 
 ---
 
@@ -196,10 +212,15 @@ Indicate what percentage of the project you have left to complete and how confid
 
 ## Milestone 4: Final Code, Presentation, Demo
 
-### ❗User Instructions
+### User Instructions
 
-❗In a paragraph, explain how to use your program. Assume the user is starting just after they hit the "Run" button 
-in PyCharm. 
+    After the user hits play in Godot (since we are using another programming langauge), the user will be prompted with a Menu Screen that displays the name
+    of our game, the objective and two buttons. Start and Exit. The Exit button ends the program, and the user has to click run again. The Start button runs 
+    the game, where they player has to collect all of the animals. The user can use the arrow keys or the WASD keyboard input to move the player input around 
+    the screen. The animals are collected when the user "touches" them and then they follow the player around the map. To win, you have to collect all 10 animals, 
+    after which you will get a winning menu that prompts the user with two buttons: whether to restart and go back to the main menu, or exit and quit the game.
+
+    "Find all 10 animals! Use the arrow keys or WASD input to move. To 'collect' an animal, simply walk into it!"
 
 ### ❗Errors and Constraints
 

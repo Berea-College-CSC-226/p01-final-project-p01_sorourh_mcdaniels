@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="p01-final-project-the-underworld"
-run/main_scene="res://Comprehensive/playground.tscn"
+run/main_scene="uid://dvcl427gymcj1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
 [display]
@@ -29,6 +29,10 @@ window/stretch/mode="viewport"
 [dotnet]
 
 project/assembly_name="p01-final-project-the-underworld"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gut/plugin.cfg")
 
 [input]
 
