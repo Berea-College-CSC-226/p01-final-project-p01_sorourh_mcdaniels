@@ -225,7 +225,10 @@ deficiencies that remain in your code. Bugs found that aren't acknowledged in th
 ```
 
 ```
-    Partner 2: **Replace this with your reflection
+    Skylar McDaniel:
+    My reasons for wanting to follow through on this particular project, Sunfire Mountain, lie in how I admire game development (and really any application development). I love being able to bring a program together in EVERY aspect: tiles, scripts, GUI, etc.
+    Our final project reflected our initial design by probably... 15%. It had the basic cute-pixel design we hoped for, however none of the gameplay is similar. Our initial design was also more meant for linear programming, but we ended up using Godot which is far more object-oriented.
+    Much was learned. For me, I was able to apply GitHub to a more hands-on scene that forced me to learn the REAL pros and cons and not just what I was told (hands-on is the only way you'll every really understand why you do something). I also learned how to 
 ```
 
 ---
