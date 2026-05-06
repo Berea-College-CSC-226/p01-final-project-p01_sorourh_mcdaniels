@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-class_name Player
 var cardinal_direction: Vector2 = Vector2.DOWN
 var direction : Vector2= Vector2.ZERO
 var state: String = "idle"
