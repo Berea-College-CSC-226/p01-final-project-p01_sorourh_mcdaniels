@@ -112,10 +112,11 @@
 
 
 
-**Branches**: 
+**Branch Formats**: 
 ```
     Branch 1 starting name: mcdaniels_1 & sorourh_1
     Branch 2 starting name: mcdaniels_2 & sorourh_2
+    ...
 ```
 
 ### References 
@@ -148,9 +149,6 @@ The way in which the test suites must be made is repetitive and roundabout, thus
 
 ## Milestone 2: Code Setup and Issue Queue
 
-Reflect on what you’ve done so far. How’s it going? Are you feeling behind/ahead? What are you worried about? 
-What has surprised you so far? Describe your general feelings. Be honest with yourself; this section is for you, not me.
-
 ```
     The project is going well so far. We started collecting the different sprites and images needed for the project and started the
     issue queue for all of our classes. We are feeling pretty OK so far. We did some of the research before so that it would be easy
@@ -161,8 +159,6 @@ What has surprised you so far? Describe your general feelings. Be honest with yo
 ---
 
 ## Milestone 3: Virtual Check-In
-
-Indicate what percentage of the project you have left to complete and how confident you feel. 
 
 **Completion Percentage**: `30%`
 
@@ -192,10 +188,6 @@ Indicate what percentage of the project you have left to complete and how confid
 
     "Find all 10 animals! Use the arrow keys or WASD input to move. To 'collect' an animal, simply walk into it!"
 
-### Errors and Constraints
-
-
-
 ### Reflection
 
 Each partner should write three to four well-written paragraphs address the following (at a minimum):
@@ -209,10 +201,10 @@ Each partner should write three to four well-written paragraphs address the foll
 ```
     Habiba Sorour:
     Me and Skylar bonded over liking video games since the moement we met in our first Computer Science class last semester. We both like RPG style games so when we had the opportunity to build our own game, we were super excited. Our initial idea stayed consistent
-    but the execution of it was completely different. We wanted to add a story element to it, with dialogue and different scenes and NPCs but we seatled on a collect em all style of game with the animals. I learned a lot through this process, I was able to learn a bit of GODOT and 
-    how to do animations of sprites and moving them around is something I have always wanted to do. GODOT's interface was easy to navigate and with some more practice, I think I will be able to build better games in the future. Moreover, using GITHUB to collaborate was a great expereince, getting to
-    have my teammates work on my device automatically after they are done with it. The hardest part would be actually learning the interface, and adding all of our codes and tiles together, we faced a lot of problems with GITHUB at first as uploading the project on  an established repo was a problem at first, but we fixed it. Furthermore, We had some merge conflicts
-    whenever we wanted to merge our branches together, because the smallest change in the map can have an impact. If I had more time, I would try to utlize a lot of the vuilt in functions in GODOT that can add amazing features to the game that I was not aware off, to add more flare to the 
+    but the execution of it was completely different. We wanted to add a story element to it, with dialogue and different scenes and NPCs but we settled on a "collect 'em" all style of game with the animals. I learned a lot through this process--I was able to learn a bit of GODOT and,
+    how to do animations of sprites, and moving them around is something I have always wanted to do. GODOT's interface was easy to navigate and with some more practice, I think I will be able to build better games in the future. Moreover, using GITHUB to collaborate was a great expereince, getting to
+    have my teammates work on my device automatically after they are done with it. The hardest part would be actually learning the interface and adding all of our codes and tiles together; we faced a lot of problems with GITHUB at first as uploading the project on  an established repo was a problem at first, but we fixed it. Furthermore, We had some merge conflicts
+    whenever we wanted to merge our branches together, because the smallest change in the map can have an impact. If I had more time, I would try to utlize a lot of the built-in functions in GODOT that can add amazing features to the game that I was not aware off, to add more flare to the 
     project. Furthermore, I would organize the different Nodes into their own scenes for easier access without the presence of all the animals all at once. I worked great with Skylar! I really enjoy working with her. We both have similar interests and ambitions. We both like to try our very best and push ourselves 
     to beyond our limits. The most challenging part was ultimately time conflicts and nothing the other person could have prevented due to how busy this time of the semester is. Otherwise, working with skylar has been such a breeze and honestly incredibly fun.
     
