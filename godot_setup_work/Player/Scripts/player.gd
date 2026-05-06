@@ -18,7 +18,8 @@ var party: Array[Node2D] = []
 ## loads the AnimatedSprite2D that stores the sprtie texture and animation.
 @onready var animation_player: AnimatedSprite2D = $Player
 
-
+## called every frame, handles input reading, velocity, animation updates,
+## checks if the player has collected all animals to trigger the win condition
 func _process(_delta: float) -> void:
 	## get the x and y coordinate of the player 
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
@@ -35,12 +36,13 @@ func _process(_delta: float) -> void:
 	if len(party) == 10:
 		get_tree().change_scene_to_file("res://WinMenu/WinMenu.tscn")
 
-	# creates the movement of the player and handle collisions
+	## called every physics frame
+	## creates the movement of the player and handle collisions
 func _physics_process(_delta):
 	move_and_slide()
 
 	## checks if the cardinal direction changes based on the input 
-	## returns truw if there is a change in direction, otherwise, returns false
+	## returns true if there is a change in direction, otherwise, returns false
 func SetDirection() -> bool : 
 	var new_dir : Vector2 = cardinal_direction
 	
@@ -62,7 +64,7 @@ func SetDirection() -> bool :
 		animation_player.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1 # mirror the animation from right to left
 		return true
 	
-	## checks whether the state has chanhed or not
+	## checks whether the state has changed or not
 	## returns truw if there is a change in state, otherwise, returns false
 func SetState()-> bool:
 	var new_state: String = "idle" if direction == Vector2.ZERO else "walk"
