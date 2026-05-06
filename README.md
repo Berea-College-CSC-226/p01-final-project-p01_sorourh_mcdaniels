@@ -13,9 +13,9 @@
 
 ## Milestone 1: Setup, Planning, Design
 
-**Title**: Project Underworld
+**Title**: Sunfire Mountain
 
-**Purpose**: Our Project will be a simple open-world RPG in which a user will control a player that explores a small world, collecting coins as rewards for exploration and interacting with NPCs and objects across the map.
+**Purpose**: It is a farm-based RPG in which the player's goal is to collect the animals that escaped their fence.
 
 **Source Assignment(s)**:
   - Teamwork 1/4 (class-based linear rpg)
