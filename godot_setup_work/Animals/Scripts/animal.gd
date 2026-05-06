@@ -52,7 +52,7 @@ func start_following(target: Node2D) -> void:
 func _update_cardinal(dir: Vector2) -> void:
 	var new_dir: Vector2 = cardinal_direction
 
-	if abs(dir.x) > abs(dir.y):
+	if abs(dir.x) > abs(dir.y): # finds the dominent axis the player is going =, to create a smoother transition
 		new_dir = Vector2.LEFT if dir.x < 0 else Vector2.RIGHT
 	else:
 		new_dir = Vector2.UP if dir.y < 0 else Vector2.DOWN
@@ -60,7 +60,7 @@ func _update_cardinal(dir: Vector2) -> void:
 	## only update when the animal actually changes direction
 	if new_dir != cardinal_direction:
 		cardinal_direction = new_dir
-		# Mirrors right and left opposite the player
+		# sprite flip right and left. Logic is opposite the player. 
 		anim.scale.x = 1 if cardinal_direction == Vector2.LEFT else -1
 
 	## return the animal direction
