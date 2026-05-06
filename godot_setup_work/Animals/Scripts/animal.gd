@@ -16,12 +16,15 @@ var cardinal_direction: Vector2 = Vector2.DOWN # direction animal is facing
 @onready var anim: AnimatedSprite2D = $Animal
 @onready var detection_area: Area2D = $Area2D
 
+## called once when the node enters the scene tree
+## connects the Area2D signal and plays the default idle animation before the animal gets picked up
 func _ready() -> void:
 	## detecting the area to pass through and play idle animation before the player pickes them up 
 	detection_area.body_entered.connect(_on_body_entered)
 	anim.play("idle_side")
 
-## the physics layer that updates ever
+## called every physics frame, moves the animal toward its follow target
+## skips all logic if the animal is IDLE or no target assigned
 func _physics_process(_delta: float) -> void:
 	## if animal isn't following anything and is in IDLE state
 	if state != State.FOLLOWING or follow_target == null:
@@ -42,17 +45,17 @@ func _physics_process(_delta: float) -> void:
 
 	move_and_slide()
 
-## 
+## called by the player node to get animal into party
+## sets the follow target to either the player or the animal ahead
 func start_following(target: Node2D) -> void:
-	## called by the player node to join the party
 	follow_target = target
 	state = State.FOLLOWING
 
-	## determienes which direction (up,down,left,right) the animal is moving towards
+## updates which cardinal direction (up, down, left, right) the animal is moving toward
 func _update_cardinal(dir: Vector2) -> void:
 	var new_dir: Vector2 = cardinal_direction
 
-	if abs(dir.x) > abs(dir.y): # finds the dominent axis the player is going =, to create a smoother transition
+	if abs(dir.x) > abs(dir.y): # finds the dominent axis the player is going, to create a smoother transition
 		new_dir = Vector2.LEFT if dir.x < 0 else Vector2.RIGHT
 	else:
 		new_dir = Vector2.UP if dir.y < 0 else Vector2.DOWN
@@ -63,7 +66,7 @@ func _update_cardinal(dir: Vector2) -> void:
 		# sprite flip right and left. Logic is opposite the player. 
 		anim.scale.x = 1 if cardinal_direction == Vector2.LEFT else -1
 
-	## return the animal direction
+	## return the animal direction, to build the correct animation
 func _anim_direction() -> String:
 	## to get the direction used to call the proper animation 
 	if cardinal_direction == Vector2.DOWN:
@@ -80,7 +83,8 @@ func _play_anim(new_state: String) -> void:
 	if anim.animation != anim_name: ## play it only if it changes
 		anim.play(anim_name)
 
-	## adding the animal to the party whenever the player touches the animal
+	## triggered when any body enters the animal's Area2D
+	## only reacts if the animal is still idle and the body that entered is the player
 func _on_body_entered(body: Node) -> void: # body is whatever object enters the Area2D
 	if state == State.IDLE and body.is_in_group("player"): # makes sure that the only animals that can join the party are new ones and ignores anything that isn't the player
 		body.add_to_party(self) # passing the current animal, to the r
