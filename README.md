@@ -2,8 +2,8 @@
 
 ## Instructions
 
-❗️Exclamation Marks ❗️indicate action items; you should remove these emoji as you complete/update the items which 
-  they accompany. (This means that your final README should have no ❗️in it!)
+Exclamation Marks indicate action items; you should remove these emoji as you complete/update the items which 
+  they accompany. (This means that your final README should have no in it!)
 
 **Author(s)**: Habiba Sorour & Skylar McDaniel
 
@@ -222,9 +222,9 @@ Indicate what percentage of the project you have left to complete and how confid
 
     "Find all 10 animals! Use the arrow keys or WASD input to move. To 'collect' an animal, simply walk into it!"
 
-### ❗Errors and Constraints
+### Errors and Constraints
 
-❗Every program has bugs or features that had to be scrapped for time. These bugs should be tracked in the issue queue. 
+Every program has bugs or features that had to be scrapped for time. These bugs should be tracked in the issue queue. 
 You should already have a few items in here from the prior weeks. Create a new issue for any undocumented errors and 
 deficiencies that remain in your code. Bugs found that aren't acknowledged in the queue will be penalized.
 
@@ -247,3 +247,25 @@ deficiencies that remain in your code. Bugs found that aren't acknowledged in th
 ```
 
 ---
+
+### Requirement Fulfillments | Uniquity of Godot
+
+*Because working with Godot and GDScript is unique and different to PyCharm and Python, we have decided to write how we fulfill the requirements here to note some differences.*
+
+- The only chapter not obviously covered within our project was Chapter 12: Dictionaries. While a direct dictionary is not used, we used a similar form via enumerate based on our animation frames and their states. Maps are keyed to integers (IDLE, RUNNING, JUMPING). For example: state 0 = IDLE; state 1 = FOLLOWING.
+
+- "Your project *must* use either the Turtle library, Pygame, or the Tkinter module..." With permission from Dr. Heggen, it was stated that we "do not have to use" any of these and fulfill the GUI-based requirements as well as library references and Pygame items via Godot itself with built-in functions (e.g. our Main Menu class acts as a GUI and Godot itself is similar to Pygame)
+
+- Godot does not natively use test suites nor does it cleanly offer the grounds to create one (for example, in Pycharm--we were able to make a function that took only a line of code to for each test, however in Godot--we create a new function for each). This is because Godot, like other game engines, understands that games are unpredictable and test-building is extensive and time-consuming and the constant tweaks made within projects makes them even harder to maintain. We worked hard to find a plug-in for test suites and understand the concepts within it, however the work would've been unnecessarily long and we wanted to focus on the project itself.
+
+### Repositories:
+
+We initially worked with the following repository:
+___
+*There was not much physical progress as we spent many hours simply getting GitHub and Godot to be friendly with each other. Thus, our milestones are less physical and more centered on the fact that after milestone 3--we got commits and pushes to work seamlessly after all of our hardwork. Additionally, this resulted in our issue queue and README lacking for a while, however we heavily used each when we got into the actual flow of work.*
+
+However, once it was clear that working on this repository was not recommended--we switched our data back to the following repository:
+___
+
+THANK YOU, DR. HEGGEN!
+The liberties we were allowed and the creativity we could use made this project VERY FUN to work with and VERY CHALLENGING. It was the step each of us needed to really push ourselves and understand specific concepts we've wanted to learn on a deeper, more practical level. This has been the highlight of the semester for us both.
