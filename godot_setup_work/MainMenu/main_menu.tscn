@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dvcl427gymcj1"]
 
-[ext_resource type="VideoStream" uid="uid://bu6a5q5xtx423" path="res://MainMenu/Video/main_menu.ogv" id="1_3w4mj"]
 [ext_resource type="Script" uid="uid://yyae78ha6siy" path="res://MainMenu/main_menu.gd" id="1_5de1l"]
 [ext_resource type="FontFile" uid="uid://urc6aewqpkwn" path="res://Font/pixel-game/Pixel Game.otf" id="2_5de1l"]
+[ext_resource type="VideoStream" uid="uid://dpiapkt54eod2" path="res://MainMenu/main_menu.ogv" id="2_ajn5b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
 bg_color = Color(1, 1, 1, 1)
@@ -79,7 +79,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-stream = ExtResource("1_3w4mj")
+stream = ExtResource("2_ajn5b")
 autoplay = true
 expand = true
 loop = true
