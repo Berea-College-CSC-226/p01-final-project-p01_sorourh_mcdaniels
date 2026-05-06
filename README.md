@@ -247,9 +247,14 @@ deficiencies that remain in your code. Bugs found that aren't acknowledged in th
 
 We initially worked with the following repository:
 ___
-*There was not much physical progress as we spent many hours simply getting GitHub and Godot to be friendly with each other. Thus, our milestones are less physical and more centered on the fact that after milestone 3--we got commits and pushes to work seamlessly after all of our hardwork. Additionally, this resulted in our issue queue and README lacking for a while, however we heavily used each when we got into the actual flow of work.*
+*There was not much physical progress as we spent many hours simply getting GitHub and Godot to be friendly with each other. Thus, our milestones are less physical and more centered on the fact that after milestone 3--we got commits and pushes to work seamlessly after all of our hardwork.*
 
-However, once it was clear that working on this repository was not recommended--we switched our data back to the following repository:
+*Additionally, this resulted in our issue queue and README lacking for a while, however we heavily used each when we got into the actual flow of work.*
+https://github.com/sorourh05/csc226-project
+
+However, once it was clear that working on this repository was not recommended--we switched our data back to this repository: 
+https://github.com/Berea-College-CSC-226/p01-final-project-p01_sorourh_mcdaniels 
+
 ___
 
 THANK YOU, DR. HEGGEN!
