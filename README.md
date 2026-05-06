@@ -2,9 +2,6 @@
 
 ## Instructions
 
-Exclamation Marks indicate action items; you should remove these emoji as you complete/update the items which 
-  they accompany. (This means that your final README should have no in it!)
-
 **Author(s)**: Habiba Sorour & Skylar McDaniel
 
 **Google Doc Link**: [Google Doc Link](https://docs.google.com/document/d/1EIfkGvfVddGJb7MGmApVjCTVhcUEOpGGCw5_mlvLRsE/edit?usp=sharing)
@@ -26,7 +23,7 @@ Exclamation Marks indicate action items; you should remove these emoji as you co
   - Homework 11 (final project design)
 
 **CRC Card(s)**:
-  # World & Animals (Node2D) CRC Card
+### World & Animals (Node2D) CRC Card
 
 | Instance name: World (Node2D) world.tscn |  |
 | :---- | :---- |
@@ -35,9 +32,9 @@ Exclamation Marks indicate action items; you should remove these emoji as you co
 | **Class Methods:**  |  |
 |  **Initialization:** <br/>Creates a Node2D object that holds all relative classes & files for processing |  |
 
-## 
+ 
 
-## Player & Animals (CharacterBody2D) CRC Card
+### Player & Animals (CharacterBody2D) CRC Card
 
 | Instance name: Player (CharacterBody2D) player.tscn player.gd Instance name: Animals (CharacterBody2D)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |  |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| :---- |
@@ -115,12 +112,7 @@ Exclamation Marks indicate action items; you should remove these emoji as you co
 
 
 
-**Branches**: This project will **require** effective use of git. 
-
-Each partner should create a branch at the beginning of the project, and stay on this branch (or branches of their 
-branch) as they work. When you need to bring each others branches together, do so by merging each other's branches 
-into your own, following the process we've discussed in previous assignments, then re-branching out from the merged code.  
-
+**Branches**: 
 ```
     Branch 1 starting name: mcdaniels_1 & sorourh_1
     Branch 2 starting name: mcdaniels_2 & sorourh_2
@@ -156,8 +148,6 @@ The way in which the test suites must be made is repetitive and roundabout, thus
 
 ## Milestone 2: Code Setup and Issue Queue
 
-Most importantly, keep your issue queue up to date, and focus on your code. 🙃
-
 Reflect on what you’ve done so far. How’s it going? Are you feeling behind/ahead? What are you worried about? 
 What has surprised you so far? Describe your general feelings. Be honest with yourself; this section is for you, not me.
 
@@ -176,9 +166,7 @@ Indicate what percentage of the project you have left to complete and how confid
 
 **Completion Percentage**: `30%`
 
-️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
-  strategies you can employ to increase the likelihood that you'll be successful in completing this project 
-  before the deadline.
+️**Confidence**:
 
 ```
     We feel that we can complete the project with a 70% confidence rate. This is due to the fact that we are using another software to write
@@ -206,13 +194,11 @@ Indicate what percentage of the project you have left to complete and how confid
 
 ### Errors and Constraints
 
-Every program has bugs or features that had to be scrapped for time. These bugs should be tracked in the issue queue. 
-You should already have a few items in here from the prior weeks. Create a new issue for any undocumented errors and 
-deficiencies that remain in your code. Bugs found that aren't acknowledged in the queue will be penalized.
 
-### ❗Reflection
 
-❗Each partner should write three to four well-written paragraphs address the following (at a minimum):
+### Reflection
+
+Each partner should write three to four well-written paragraphs address the following (at a minimum):
 - Why did you select the project that you did?
 - How closely did your final project reflect your initial design?
 - What did you learn from this process?
@@ -221,7 +207,9 @@ deficiencies that remain in your code. Bugs found that aren't acknowledged in th
 - How well did you work with your partner? What made it go well? What made it challenging?
 
 ```
-    Partner 1: **Replace this with your reflection
+    Habiba Sorour:
+    Me and Skylar bonded over liking video games since the moement we met in our first Computer Science class last semester. We both like RPG style games so when we had the opportunity to build our own game, we were super excited. Our initial idea stayed consistent
+    but the execution of it was completely different. We wanted to add a story element to it, with dialogue and different scenes and NPCs but we seatled on a collect em all style of game. 
 ```
 
 ```
