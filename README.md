@@ -190,14 +190,6 @@ The way in which the test suites must be made is repetitive and roundabout, thus
 
 ### Reflection
 
-Each partner should write three to four well-written paragraphs address the following (at a minimum):
-- Why did you select the project that you did?
-- How closely did your final project reflect your initial design?
-- What did you learn from this process?
-- What was the hardest part of the final project?
-- What would you do differently next time, knowing what you know now?
-- How well did you work with your partner? What made it go well? What made it challenging?
-
 ```
     Habiba Sorour:
     Me and Skylar bonded over liking video games since the moement we met in our first Computer Science class last semester. We both like RPG style games so when we had the opportunity to build our own game, we were super excited. Our initial idea stayed consistent
